@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/login.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -62,28 +63,8 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 200,
               width: 200,
             ),
-            Text(
-              "Your weight log!!",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 18.0,
-              ),
-            )
           ],
         ),
-      ),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Home Screen"),
       ),
     );
   }
