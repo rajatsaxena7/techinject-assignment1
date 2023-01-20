@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/googlesignin.dart';
+import 'package:flutter_application_1/main.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:provider/provider.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -48,12 +51,16 @@ class _LoginState extends State<Login> {
                       SignInButton(
                         Buttons.Google,
                         text: "Sign up with Google",
-                        onPressed: () {},
-                      ),
-                      SignInButton(
-                        Buttons.Apple,
-                        text: "Sign up with Apple",
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SplashScreen()));
+                          final provider = Provider.of<GoogleSignInProvider>(
+                              context,
+                              listen: false);
+                          provider.googleLogin();
+                        },
                       ),
                     ],
                   )

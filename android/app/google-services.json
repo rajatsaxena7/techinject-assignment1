@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "946247234345",
+    "project_id": "rajat-863c1",
+    "storage_bucket": "rajat-863c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946247234345:android:7e6b4102a8cd5af336bd38",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946247234345-ol90bj6vdk5lc94te87ppubnsk36j8p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPZFk1Mnbro-jbEzr5fWjmODWLq8wz7d4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946247234345-ol90bj6vdk5lc94te87ppubnsk36j8p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
