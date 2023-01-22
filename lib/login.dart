@@ -3,6 +3,9 @@ import 'package:flutter_application_1/googlesignin.dart';
 import 'package:flutter_application_1/main.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_application_1/mainpage.dart';
+
+import 'home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -55,7 +58,9 @@ class _LoginState extends State<Login> {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SplashScreen()));
+                                  builder: (context) => MainPage(
+                                        title: 'Select',
+                                      )));
                           final provider = Provider.of<GoogleSignInProvider>(
                               context,
                               listen: false);

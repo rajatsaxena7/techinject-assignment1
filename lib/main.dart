@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/googlesignin.dart';
 import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/search.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
+import 'package:lottie/lottie.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -64,10 +66,8 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "assets/1694208.png",
-              height: 200,
-              width: 200,
+            Lottie.network(
+              "https://assets6.lottiefiles.com/packages/lf20_zECicN9gKM.json",
             ),
           ],
         ),
