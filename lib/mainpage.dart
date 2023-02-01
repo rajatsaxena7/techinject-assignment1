@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/menu.dart';
 import 'package:flutter_application_1/search.dart';
-
+import 'package:flutter_application_1/menu.dart';
 import 'list.dart';
 
 class MainPage extends StatelessWidget {
@@ -48,6 +49,20 @@ class MainPage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const FetchData()));
               },
               child: const Text('Fetch Data'),
+              color: Color.fromARGB(255, 243, 33, 215),
+              textColor: Colors.white,
+              minWidth: 300,
+              height: 40,
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Menu()));
+              },
+              child: const Text('Assignment 2'),
               color: Color.fromARGB(255, 243, 33, 215),
               textColor: Colors.white,
               minWidth: 300,
